@@ -22,13 +22,13 @@ Callback function for iterating.
 
 ## API
 
-### Creating and Destroying the Tree
+### Create and destroy the Tree
 ```
 rbt_t *rbt_new(void);
 void rbt_destroy(rbt_t *rbt);
 ```
 
-### Operating
+### Operatings
 ```
 void rbt_attach_cmp(rbt_t *rbt, rbt_cmp_t cmp);
 int rbt_insert(rbt_t *rbt, void *key, void *value);
@@ -40,7 +40,7 @@ rbt_node_t *rbt_predecessor(rbt_t *rbt, rbt_node_t *x);
 rbt_node_t *rbt_remove(rbt_t *rbt, void *key);
 ```
 
-### Iterator
+### Iterating
 ```
 int rbt_iterator_init(rbt_t *rbt, rbt_iterator_t *iterator);
 void rbt_iterator_next(rbt_iterator_t *iterator);
