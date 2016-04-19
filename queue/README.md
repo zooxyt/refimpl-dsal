@@ -28,5 +28,5 @@ int queue_push(queue_t *queue, void *new_element);
 void queue_pop(queue_t *queue);
 void *queue_front(queue_t *queue);
 void *queue_back(queue_t *queue);
-size_t queue_pop(queue_t *queue);
+size_t queue_size(queue_t *queue);
 ```
